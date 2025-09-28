@@ -1,3 +1,8 @@
+#include <stdlib.h>
+struct ListNode {
+  int val;
+  struct ListNode *next;
+};
 // @leet start
 /**
  * Definition for singly-linked list.
@@ -6,11 +11,6 @@
  *     struct ListNode *next;
  * };
  */
-#include <stdlib.h>
-// struct ListNode {
-//   int val;
-//   struct ListNode *next;
-// };
 struct ListNode *addTwoNumbers(struct ListNode *l1, struct ListNode *l2) {
   int carry = 0;
   struct ListNode *head = NULL;
